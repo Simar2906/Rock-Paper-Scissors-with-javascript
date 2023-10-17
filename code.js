@@ -1,13 +1,13 @@
 function getOutputOfComputer()
 {
-    randomVar = Math.floor(Math.random()*3 + 1);
+    randomVar = Math.floor(Math.random()*3);
     // 1 = rock
     // 2 = paper
     // 3 = scissor
     const choice = {
-        1 : "Rock",
-        2 : "Paper",
-        3 : "Scissors"
+        0 : "Rock",
+        1 : "Paper",
+        2 : "Scissors"
     }
     const final = {
         0 : "Draw!",
@@ -24,35 +24,15 @@ function getOutputOfComputer()
 
 function winConditionChecker(inp, out)
 {
-    result = 0 // 0 : draw, 1: player wins, 2: Computer Wins
-    if(inp == out){
-        result = 0
-    }
-    else if(inp ==1 && out == 2) //rock loses paper
+    //return 0: draw, 1: win, 2: loss
+    //   ..-p >R->P->S..->
+    switch((inp+1)%3)
     {
-        result = 2
+        case (out +1)%3: // same as output so Draw
+            return 0
+        case out: // Next one in circle so Lost
+            return 2
+        default:  //Not Next one and not same So Win
+            return 1
     }
-    else if(inp ==2 && out == 1) // paper beats rock
-    {
-        result = 1
-    }
-    else if(inp ==1 && out == 3) //rock beats Scissors
-    {
-        result = 1
-    }
-    else if(inp ==3 && out == 1) //Scissors cannot beat Rock
-    {
-        result = 2
-    }
-    else if(inp ==2 && out == 3) //paper cannot beats Scissors
-    {
-        result = 2
-    }
-    else if(inp ==3 && out == 2) //Scissors beat paper
-    {
-        result = 1
-    }
-    return result
 }
-// console.log(Math.random()*3 +1 )
-// console.log(getOutputOfComputer())
