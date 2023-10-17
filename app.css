@@ -104,3 +104,11 @@ input:active  + label img{
     padding-top: 0.5em;
     text-align: center;
 }
+
+.back{
+    border: none;
+    background-color: transparent;
+    font-family: 'Fredericka the Great', serif;
+    font-size: 0.5em;
+    margin-left: 20%;
+}
