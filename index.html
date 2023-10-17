@@ -6,28 +6,62 @@
         <title>Rock Paper Scissors</title>
         <link rel="stylesheet" href="app.css">
         <script src="code.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Monoton&display=swap" rel="stylesheet">
     </head>
     <body>
         <!-- <h1>Rock Paper Scissors</h1> -->
         <!-- <form action=""> -->
-    <div id="choices">
-        <div id="rock_choice">
-            <input type="radio" class="radio_inp" id="Rock" value="0" name="inp" checked>
-            <label for="Rock"><img class = "choice_img"src="Images\rock.png"></label>
+        <span>Choose Between these options</span>
+        <div id="choices">
+            <div id="rock_choice">
+                <input
+                    type="radio"
+                    class="radio_inp"
+                    id="Rock"
+                    value="0"
+                    name="inp"
+                    checked
+                >
+                <label for="Rock">
+                    <img class="choice_img" src="Images\rock.png">
+                </label>
+            </div>
+            <div id="paper_choice">
+                <input
+                    type="radio"
+                    class="radio_inp"
+                    id="Paper"
+                    value="1"
+                    name="inp"
+                >
+                <label for="Paper">
+                    <img class="choice_img" src="Images\paper.png">
+                </label>
+            </div>
+            <div id="scissors_choice">
+                <input
+                    type="radio"
+                    class="radio_inp"
+                    id="Scissors"
+                    value="2"
+                    name="inp"
+                >
+                <label for="Scissors">
+                    <img class="choice_img" src="Images\scissors.png">
+                </label>
+            </div>
         </div>
-        <div id="paper_choice">
-            <input type="radio" class="radio_inp" id="Paper" value="1" name="inp">
-            <label for="Paper"><img class = "choice_img"src="Images\paper.png"></label>
+        <div class = "submit_output">
+            <button class="outputButton" id="submit" onclick="getOutputOfComputer()">Submit Your Response</button>
         </div>
-        <div id="scissors_choice">
-            <input type="radio" class="radio_inp" id ="Scissors" value="2" name="inp">
-            <label for="Scissors"><img class = "choice_img"src="Images\scissors.png"></label>
+        <!-- </form> -->
+        <div class = "AfterPress">
+        <p id="input"></p>
+        <p id="output"></p>
+        
         </div>
-    </div>
-        <button id="submit" onclick="getOutputOfComputer()">Submit Your Response</button>
-    <!-- </form> -->
-        <p id = "input"></p>
-        <p id = "output"></p>
-        <p id = "Result"></p>
+        <p id="Result"></p>
     </body>
 </html>

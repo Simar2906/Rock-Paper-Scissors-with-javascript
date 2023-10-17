@@ -14,12 +14,18 @@ function getOutputOfComputer()
         1 : "You Win!!",
         2 : "You Lost :("
     }
+    const colorMatch = {
+        0 : 'black',
+        1 : 'green',
+        2 : 'red'
+     };
     userInp = ""
     userInp = document.querySelector("input[name=inp]:checked").value
-    document.getElementById("input").innerHTML = "You Chose: " + choice[userInp]
-    document.getElementById("output").innerHTML = "The computer Chose: " + choice[randomVar]
+    document.getElementById("input").innerHTML = "You Chose &#8594 " + choice[userInp]
+    document.getElementById("output").innerHTML = choice[randomVar] + " &#8592 The computer Chose" 
     result = winConditionChecker(Number(userInp), Number(randomVar))
     document.getElementById("Result").innerHTML = final[result]
+    document.getElementById("Result").style.color = colorMatch[result]
 }
 
 function winConditionChecker(inp, out)
