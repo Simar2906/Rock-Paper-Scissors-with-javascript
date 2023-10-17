@@ -1,0 +1,41 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: cornsilk;
+    font-size: 15px;
+    display: flex;
+    justify-content: flex-start;
+    align-content:center;
+    flex-wrap: wrap;
+    height: 100vh;
+}
+
+.Title{
+    font-size: 10em;
+    color: black;
+    font-family: 'Fredericka the Great', serif;
+    position:relative;
+    padding-left: 0.2em;
+    /* top: 40vh; */
+}
+
+.buttons{
+    display: flex;
+    width: 50vw;
+    font-size: 6em;
+    padding-left: 1em;
+    justify-content: space-evenly;
+    font-family: 'Fredericka the Great', serif;
+    margin-top: 0.5em;
+    align-self: flex-end;
+}
+
+.buttons button{   
+    border: none;
+    background-color: transparent;
+    font-family: inherit;
+    font-size: inherit;
+}

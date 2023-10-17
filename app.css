@@ -1,11 +1,20 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body{
+    background-color: cornsilk;
     font-size: 15px;
+    
 }
 
 h1{
-    color: red;
-    font-size: 3em;
-    text-align: center;
+    font-size: 10em;
+    color: black;
+    font-family: 'Fredericka the Great', serif;
+    position:relative;
+    padding-left: 0.2em;
 }
 /* input{
     display: inline;
