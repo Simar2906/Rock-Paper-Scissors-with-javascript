@@ -10,18 +10,20 @@
     <body>
         <!-- <h1>Rock Paper Scissors</h1> -->
         <!-- <form action=""> -->
-        <div id="Rock">
-            <input type="radio" id="Rock" value="0" name="inp" checked>
-            <label for="Rock">Rock</label>
+    <div id="choices">
+        <div id="rock_choice">
+            <input type="radio" class="radio_inp" id="Rock" value="0" name="inp" checked>
+            <label for="Rock"><img class = "choice_img"src="Images\rock.png"></label>
         </div>
-        <div id="Paper">
-            <input type="radio" id="Paper" value="1" name="inp">
-            <label for="Paper">Paper</label>
+        <div id="paper_choice">
+            <input type="radio" class="radio_inp" id="Paper" value="1" name="inp">
+            <label for="Paper"><img class = "choice_img"src="Images\paper.png"></label>
         </div>
-        <div id="Scissors">
-            <input type="radio" id="Scissors" value="2" name="inp">
-            <label for="Scissors">Scissors</label>
+        <div id="scissors_choice">
+            <input type="radio" class="radio_inp" id ="Scissors" value="2" name="inp">
+            <label for="Scissors"><img class = "choice_img"src="Images\scissors.png"></label>
         </div>
+    </div>
         <button id="submit" onclick="getOutputOfComputer()">Submit Your Response</button>
     <!-- </form> -->
         <p id = "input"></p>

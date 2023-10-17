@@ -19,6 +19,40 @@ h1{
 /* input{
     display: inline;
 } */
-.Rock .Paper .Scissors{
+.Rock, .Paper, .Scissors{
     display: inline;
+}
+
+.choice_img{
+    width: 20em;
+    /* height: 20em; */
+    
+}
+#choices{
+    /* position:relative;*/
+    /* top: 20vh;  */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 40vh;
+}
+
+input{
+    visibility:hidden;
+    /* font: 100px; */
+}
+input:checked + label img{
+    /* color: brown; */
+    background-color: rgb(194, 113, 21);
+    /* border:100px solid /black; */
+    transition: all 1s;
+}
+input:hover + label img{
+    background-color: rgba(194, 113, 21, 0.494);
+    border-radius: 50px;
+    transition: all 1s;
+}
+input:active  + label img{
+    background-color: rgb(194, 113, 21);
+    transition: all 1s;
 }
